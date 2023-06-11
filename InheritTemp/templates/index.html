@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHOPIFY</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #30336b;
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+		}
+		nav li {
+			margin-right: 20px;
+		}
+		nav li:last-child {
+			margin-right: 0;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 20px;
+			transition: all 0.2s ease;
+		}
+		nav a:hover {
+			color: #e74c3c;
+		}
+		section {
+			padding: 50px;
+			background-color: #fff;
+			text-align: center;
+		}
+		h2 {
+			margin-top: 0;
+			font-size: 32px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>SHOPIFY</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Collections</a></li>
+				<li><a href="#">Latest Trends</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Featured Collections this week!</h2>
+			<h1>Welcome to the Shopify!</h1>
+			{%block Body%}
+		<p>we offer a wide range of products from your daily wears to casual.
+            From ethnic to formal
+            All at one place!</p>
+		<p>Explore our website to learn more about our collections, services, and policies. You can also use our online catalog to search for latest products and collections.</p>
+		{%endblock Body%}
+			<a href="#">View Collection</a>
+		</section>
+	</main>
+	<hr>
+	{%block content%}
+    Contact us at email !
+	{%endblock%}
+</body>
+</html>
